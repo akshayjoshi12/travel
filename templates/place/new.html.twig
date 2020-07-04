@@ -1,0 +1,58 @@
+{% extends 'main.html.twig' %}
+
+{% block body %}
+<h1>Travel Guide</h1>
+
+<div class="user_form pad10">
+    {{ form_start(form) }}
+        <div class="row">
+            <div class="col-md-12">
+                <label>Upload your travelling photos which you think best one: </label>
+                {{ form_widget(form.placeImages) }}
+                <span class="note">* Press ctrl key to select multiple images. Upload best natural photos and avoid uploading personal photos.</span>
+            </div>
+        </div>
+        <div class="row mt20">
+            <div class="col-md-12">
+                <label>Album Title: </label>
+                {{ form_widget(form.title) }}
+            </div>
+        </div>
+        <div class="row mt20">
+            <div class="col-md-12">
+                <label>Album Description:</label>
+                {{ form_widget(form.description) }}
+            </div>
+        </div>
+        <div class="row mt20">
+            <div class="col-md-12">
+                <label>You first name:</label>
+                {{ form_widget(form.firstName) }}
+            </div>
+        </div>
+        <div class="row mt20">
+            <div class="col-md-12">
+                <label>You last name:</label>
+                {{ form_widget(form.lastName) }}
+            </div>
+        </div>
+        <div class="row mt20">
+            <div class="col-md-12">
+                <label>Username if you would like to create your account:</label>
+                {{ form_widget(form.userName) }}
+            </div>
+        </div>
+        <div class="row mt20">
+            <div class="col-md-12">
+                <label>Password: </label>
+                {{ form_widget(form.password) }}
+            </div>
+        </div>
+        <div class="row mt20">
+            <div class="col-md-12">
+                {{ form_row(form.Submit) }}
+            </div>
+        </div>
+    {{ form_end(form) }}
+</div>
+{% endblock %}

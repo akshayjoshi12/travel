@@ -1,0 +1,31 @@
+body {
+    background-image: url("../images/trojkaty.gif");
+}
+
+.container.body {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.navbar.navbar-default {
+    background-color: #016A88;
+}
+
+.user_form label{
+	text-transform: capitalize;
+}
+.mt10{
+	margin-top: 10px;
+}
+.mt20{
+	margin-top: 20px;
+}
+.pad10{
+	padding: 10px;
+}
+.note{
+	font-size: 12px;
+	color: #a39d9d;
+	font-weight: 600;
+}
